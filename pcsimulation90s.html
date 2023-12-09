@@ -1,0 +1,85 @@
+<html>
+    <body>
+        <button id="folder">
+            <img style="width: 50px;" src="https://telegram-stickers.github.io/public/stickers/windows-95/5.png">
+            <p>PLEASE STOP</p>
+        </button>
+        <div id="innerfolder">
+            <div id="taskbarthing">
+                <img id="close" style="width: 40px; position: absolute; right: 0; cursor: pointer; " src="https://64.media.tumblr.com/016e08a0519172f53be9e62d1b2575f9/862f5002fea3d3c3-9a/s540x810/5b43fdd0865111096cad35f6bbca1fdd0c1aad57.png">
+                <p style="color: white;">JUST THINK ABOUT STOPPING PLEASE MAN</p>
+            </div>
+            <button id="textfile">
+                <img style="width: 50px;" src="https://win98icons.alexmeub.com/icons/png/notepad_file-2.png">
+                <p>FINAL WARNING</p>
+            </button>
+        </div>
+        <div id="youaskedforit">
+            <div id="taskbarthing">
+                <img id="close2" style="width: 40px; position: absolute; right: 0; cursor: pointer; " src="https://64.media.tumblr.com/016e08a0519172f53be9e62d1b2575f9/862f5002fea3d3c3-9a/s540x810/5b43fdd0865111096cad35f6bbca1fdd0c1aad57.png">
+                <p style="color: white;">YOU ASKED FOR IT GRAHHH</p>
+            </div>
+            <img src="https://media.tenor.com/9SDWiysuINsAAAAj/whistle-josh-hutcherson.gif">
+        </div>
+    </body>
+    <style>
+        #youaskedforit {
+            background-color: white;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+           
+            height: 400px;
+            display: none;
+        }
+        #taskbarthing {
+            background-color: blue;
+            width: 100%;
+            padding-top: 0.1px;
+        }
+        #textfile {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+           
+        }
+        #innerfolder {
+            background-color: white;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            height: 400px;
+            display: none;
+        }
+        #folder {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+        body {
+            background-image: url("https://d7hftxdivxxvm.cloudfront.net/?height=630&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2P6t_Yt6dF0TNN76dlp-_Q%252F3417757448_4a6bdf36ce_o.jpg&width=1200");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        document.getElementById("folder").onclick =()=> {
+            document.getElementById("innerfolder").style.display='block';
+        }
+        document.getElementById("close").onclick =()=> {
+            document.getElementById("innerfolder").style.display='none';
+        }
+        document.getElementById("textfile").onclick =()=> {
+            document.getElementById("youaskedforit").style.display='block';
+            document.getElementById("innerfolder").style.display='none';
+        }
+        document.getElementById("close2").onclick =()=> {
+            document.getElementById("youaskedforit").style.display='none';
+        }
+    </script>
+</html>

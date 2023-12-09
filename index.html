@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Donut.</title>
+    </head>
+    <body>
+        <div class="center">
+            <h1>How are you feeling today?</h1>
+            <div class="button-container">
+                <button id="oldahhwebsite" class="button" onclick="window.location.href='90sdonut.html';">Nostalgic</button>
+                <button id="donutblog" class="button" onclick="window.location.href='donutcard.html';">Contemplative</button>
+                <!-- <button id="inspire" class="button">Inspired</button> -->
+            </div>
+        </div>
+    </body>
+    <style>
+        .button {
+            border: none;
+            border-radius: 5px;
+            font-family: simpson;
+            background-color: #DDCFFF;
+            color: #040de1;
+            cursor: pointer;
+            transition: all .2s ease;
+            margin: 0 5px; /* Add margin for spacing between buttons */
+        }
+
+        .button:hover {
+            background-color: #040de1;
+            color: #DDCFFF;
+            transition: all .2s ease;
+            border-radius: 10px;
+        }
+
+        body {
+            background: radial-gradient(#dd5e89, #f7bb97);
+        }
+
+        @font-face {
+            font-family: simpson;
+            src: url(simpson.otf) 
+        }
+
+        h1 {
+            font-family: simpson;
+        }
+
+        .center {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between; /* Distribute buttons equally on the container */
+            width: 100%; /* Make the container take up the full width of the center div */
+        }
+    </style>
+</html>
